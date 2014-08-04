@@ -35,11 +35,15 @@ public class MoneyTeam {
         HashMap<Integer, String> denominations = generateDenominations();
         
         
+        return "";
     }
 
     public static void main(String[] args) {
-        double inputValue = "123456.78";
+        //double inputValue = "123456.78";
+        String[] s = "123456.78".split(".");
+        StringTokenizer st = new StringTokenizer("12345.67", ".");
         
+        System.out.println(st.nextToken());
 
     }
 
