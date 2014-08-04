@@ -37,13 +37,29 @@ public class MoneyTeam {
         
         return "";
     }
+    
+    public static Integer[] getRupeesAndPaise(String number) {
+        Integer[] values = new Integer[2];
+        StringTokenizer st = new StringTokenizer(number, ".");
+        values[0] = Integer.parseInt(st.nextToken());
+        values[1] = Integer.parseInt(st.nextToken());
+        return values;
+    }
 
     public static void main(String[] args) {
-        //double inputValue = "123456.78";
-        String[] s = "123456.78".split(".");
-        StringTokenizer st = new StringTokenizer("12345.67", ".");
+        Double num = Double.parseDouble("123");
+        Integer[] values = getRupeesAndPaise(num.toString());
         
-        System.out.println(st.nextToken());
+        
+        
+        System.out.println(num);
+        
+            
+            
+        
+        
+        
+        
 
     }
 
